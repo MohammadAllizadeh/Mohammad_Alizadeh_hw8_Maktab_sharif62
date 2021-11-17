@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tableStyle.css">
+    <link rel="stylesheet" href="./css/modalStyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">create </button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Read</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th onclick="fillingTable('uid')">uid</th>
+                <th onclick="fillingTable('firstName')">firstName</th>
+                <th onclick="fillingTable('lastName')">lastName</th>
+                <th onclick="fillingTable('position')">position</th>
+                <th onclick="fillingTable('city')">city</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- table body -->
+        </tbody>
+    </table>
+<script src="../jquery-3.6.0.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/modalScript.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
